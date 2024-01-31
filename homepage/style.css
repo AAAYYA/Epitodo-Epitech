@@ -1,0 +1,109 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+    background-image: url(background.jpg);
+    /* background-image: linear-gradient(to bottom right, #f2f2f2, #fff); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: auto;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+:root {
+    --main-color: #f2f2f2;
+    --main-color-light: #fff;
+    --main-color-dark: #f4f4f4;
+}
+
+.container {
+	width: 80%;
+	max-width: 600px;
+	margin: 50px auto;
+	background-color: var(--main-color-light);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	font-size: 16px;
+    border-bottom-color: var(--main-color);
+    transition: border-bottom 0.3s ease;
+}
+
+.list {
+	list-style: none;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+li {
+	display: flex;
+    margin-bottom: 10px;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+	border-bottom: none;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]:checked + span {
+    background-color: #e6ffe6;
+    transition: background-color 0.3s ease;
+}
+
+span {
+	flex-grow: 1;
+	margin-right: 10px;
+}
+
+button {
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button.delete {
+	background-color: #ff6666;
+}
+
+button.edit {
+	background-color: #ccc;
+	margin-right: 5px;
+}
+
+button:hover {
+	background-color: #ff8c82;
+    color: #fff;
+}
+
+li:hover {
+    background-color: #f2f2f2;
+}
